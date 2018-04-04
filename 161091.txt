@@ -1,0 +1,42 @@
+$ git config --global user.name "emitrevska"
+$ git config --global user.email "elenaa.mitrevska@yahoo.com"
+$ cd Desktop
+$ mkdir lab1
+$ git init
+$ cd lab1
+$ touch l1.txt
+$ echo "Elena Mitrevska 161091" >l1.txt
+$ git add .
+$ git commit -m "Initial commit"
+$ printf "\nKNI" >> l1.txt
+$ git add .
+$ git commit -m "modify l1.txt"
+$ git remote add origin https://github.com/emitrevska/LabRepo.git
+$ git push -u origin master
+$ echo "promena" >l1.txt
+$ git checkout
+$ git branch logging
+$ git checkout logging
+$ notepad log
+$ git log
+-->commit 2047d6f0aa575380a8287d44b99ea7c39677e65a (HEAD -> logging, origin/master, master)
+Author: emitrevska <elenaa.mitrevska@yahoo.com>
+Date:   Wed Apr 4 17:19:09 2018 +0200
+
+    modify l1.txt
+
+commit 8083f7dd38c1f1775f3914fdec770d3bd5acf006
+Author: emitrevska <elenaa.mitrevska@yahoo.com>
+Date:   Wed Apr 4 17:15:28 2018 +0200
+
+    Initial commit
+$ git add .
+$ git push -u origin logging
+$ git checkout master
+$ git merge
+$ git push
+$ git branch allcomands
+$ git checkout allcomands
+
+
+
